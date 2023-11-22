@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config SYSTEM "http://www.matsim.org/files/dtd/config_v2.dtd">
+<config>
+	<module name="controler" >
+		<param name="eventsFileFormat" value="xml" />
+		<param name="firstIteration" value="0" />
+		<param name="lastIteration" value="250" />
+		<param name="mobsim" value="qsim" />
+		<param name="writeEventsInterval" value="250" />
+		<param name="writePlansInterval" value="250" />
+		<param name="overwriteFiles" value="overwriteExistingFiles" />
+		<param name="routingAlgorithmType" value="FastAStarLandmarks" />
+	</module>
+	<module name="global" >
+		<param name="coordinateSystem" value="EPSG:25832" />
+		<param name="numberOfThreads" value="8" />
+	</module>
+	
+	<module name="plans" >
+		<param name="inputPlansFile" value="../../res/population.xml.gz" />
+	</module>
+	<module name="network" >
+		<param name="inputNetworkFile" value="../../res/network.xml" />
+	</module>
+
+	<module name="qsim" >
+		<param name="startTime" value="00:00:00" />
+		<param name="endTime" value="36:00:00" />
+		<param name="flowCapacityFactor" value="0.1"/>
+		<param name="storageCapacityFactor" value="0.15"/>
+		<param name="mainMode" value="car,bus,tram" />
+		<param name="trafficDynamics" value="kinematicWaves" />
+		<param name="stuckTime" value="30.0" />
+		<param name="insertingWaitingVehiclesBeforeDrivingVehicles" value="true" />
+		<param name="numberOfThreads" value="8" />
+	</module>
+	
+	<module name="planCalcScore" >
+		<param name="fractionOfIterationsToStartScoreMSA" value="0.8" />
+		<parameterset type="activityParams" >
+			<param name="activityType" value="home" />
+			<param name="typicalDuration" value="08:00:00" />
+		</parameterset>
+		<parameterset type="activityParams" >
+			<param name="activityType" value="work" />
+			<param name="typicalDuration" value="08:00:00" />
+			<param name="openingTime" value="6:00:00" />			
+		</parameterset>
+		<parameterset type="activityParams" >
+			<param name="activityType" value="leisure" />
+			<param name="typicalDuration" value="02:00:00" />
+			<param name="openingTime" value="08:00:00" />
+		</parameterset>
+		<parameterset type="activityParams" >
+			<param name="activityType" value="education" />
+			<param name="typicalDuration" value="05:00:00" />
+			<param name="openingTime" value="08:00:00" />
+			<param name="closingTime" value="20:00:00" />
+		</parameterset>
+		<parameterset type="activityParams" >
+			<param name="activityType" value="shopping" />
+			<param name="typicalDuration" value="04:00:00" />
+			<param name="openingTime" value="08:00:00" />
+			<param name="closingTime" value="22:00:00" />
+		</parameterset>
+		<parameterset type="activityParams" >
+			<param name="activityType" value="other" />
+			<param name="openingTime" value="08:00:00" />
+			<param name="typicalDuration" value="02:00:00" />
+		</parameterset>
+		<parameterset type="activityParams" >
+			<param name="activityType" value="other" />
+			<param name="openingTime" value="08:00:00" />
+			<param name="typicalDuration" value="02:00:00" />
+		</parameterset>
+		<parameterset type="activityParams" >
+			<param name="activityType" value="passenger_interaction_0.0" />
+			<param name="typicalDuration" value="00:02:00" />	
+			<param name="openingTime" value="0:00:00" />	
+			<param name="closingTime" value="24:00:00" />		
+		</parameterset>	
+		<parameterset type="activityParams" >
+			<param name="activityType" value="walk_interaction_0.0" />
+			<param name="typicalDuration" value="00:00:01" />	
+			<param name="openingTime" value="0:00:00" />	
+			<param name="closingTime" value="24:00:00" />			
+		</parameterset>	
+		<!-- ====================================================================== -->	
+		<parameterset type="modeParams" >
+				<param name="constant" value="-5.75" />
+				<param name="marginalUtilityOfTraveling_util_hr" value="-7.25" />
+				<param name="mode" value="car" />
+				<param name="monetaryDistanceRate" value="-0.00030" />
+		</parameterset>
+		<parameterset type="modeParams" >
+				<param name="constant" value="-11.75" />
+				<param name="marginalUtilityOfTraveling_util_hr" value="-9.75" />
+				<param name="mode" value="ride" />
+				<param name="monetaryDistanceRate" value="-0.00030" />
+		</parameterset>
+		<parameterset type="modeParams" >
+				<param name="constant" value="-7.0" />
+				<param name="marginalUtilityOfTraveling_util_hr" value="-6.75" />
+				<param name="mode" value="pt" />
+				<param name="monetaryDistanceRate" value="-0.00025" />
+		</parameterset>
+		<parameterset type="modeParams" >
+				<param name="constant" value="-7.25" />
+				<param name="marginalUtilityOfTraveling_util_hr" value="-5.0" />
+				<param name="mode" value="bike" />
+		</parameterset>
+		<parameterset type="modeParams" >
+				<param name="constant" value="0.0" />
+				<param name="marginalUtilityOfTraveling_util_hr" value="0" />
+				<param name="mode" value="walk" />
+		</parameterset>
+		<parameterset type="modeParams" >
+				<param name="constant" value="0.0" />
+				<param name="marginalUtilityOfTraveling_util_hr" value="0" />
+				<param name="mode" value="walk_around" />
+		</parameterset>
+	</module>
+	
+	<module name="planscalcroute" >
+		<param name="networkModes" value="car,ride" />
+		<parameterset type="teleportedModeParameters" >
+			<param name="mode" value="bike" />
+			<param name="beelineDistanceFactor" value="1.3" />
+			<param name="teleportedModeSpeed" value="3.88888" />
+		</parameterset>
+		<parameterset type="teleportedModeParameters" >
+			<param name="mode" value="walk" />
+			<param name="beelineDistanceFactor" value="1.1" />
+			<param name="teleportedModeSpeed" value="1.1111111" />
+		</parameterset>
+		<parameterset type="teleportedModeParameters" >
+			<param name="mode" value="walk_around" />
+			<param name="beelineDistanceFactor" value="1.1" />
+			<param name="teleportedModeSpeed" value="1.1111111" />
+		</parameterset>
+	</module>
+	
+	<module name="strategy" >
+		<param name="fractionOfIterationsToDisableInnovation" value="0.8" />
+		<param name="maxAgentPlanMemorySize" value="5" />
+		<parameterset type="strategysettings" >
+			<param name="strategyName" value="ChangeExpBeta" />
+			<param name="weight" value="0.70" />
+		</parameterset>
+		<parameterset type="strategysettings" >
+			<param name="strategyName" value="ReRoute" />
+			<param name="weight" value="0.1" />
+		</parameterset>
+		<parameterset type="strategysettings" >
+			<param name="strategyName" value="SubtourModeChoice" />
+			<param name="weight" value="0.1" />
+		</parameterset>
+		 <parameterset type="strategysettings" > 
+			<param name="strategyName" value="TimeAllocationMutator_ReRoute" />
+			<param name="weight" value="0.1" />
+			<param name="disableAfterIteration" value="70"/>
+		</parameterset>
+	</module>
+	
+	<module name="travelTimeCalculator">
+		<param name="analyzedModes" value="car,freight" />
+		<param name="separateModes" value="true" />
+	</module>
+	<module name="subtourModeChoice" >
+		<param name="chainBasedModes" value="car,bike" />
+		<param name="considerCarAvailability" value="true" />
+		<param name="modes" value="car,pt,bike,walk,ride" />
+	</module>
+	<module name="TimeAllocationMutator" >
+		<param name="mutationAffectsDuration" value="false" />
+		<param name="mutationRange" value="1800.0" />		
+	</module>
+	<module name="parallelEventHandling" >
+		<param name="numberOfThreads" value="1" />
+	</module>
+	
+	<module name="transit">
+		<param name="transitScheduleFile" value="../../res/transitSchedule.xml" />
+		<param name="vehiclesFile" value="../../res/transitVehicles.xml" />
+		<param name="transitModes" value="pt" />
+		<param name="useTransit" value="true" />
+	</module>
+	<module name="transitRouter" >
+		<param name="additionalTransferTime" value="0.0" />
+		<param name="extensionRadius" value="500.0" />
+		<param name="maxBeelineWalkConnectionDistance" value="200.0" />
+		<param name="searchRadius" value="1000.0" />
+	</module>
+	<module name="swissRailRaptor">
+		<param name="useModeMappingForPassengers" value="false"/>
+		<param name="useRangeQuery" value="false"/>
+		<param name="transferPenaltyBaseCost" value="0.5" />
+		<param name="transferPenaltyCostPerTravelTimeHour" value="1.2" />
+		<param name="transferPenaltyMinCost" value="1.0" />
+		<param name="transferPenaltyMaxCost" value="5.0" />
+	</module>
+	
+	<module name="counts" >
+		<param name="analyzedModes" value="car" />
+		<param name="averageCountsOverIterations" value="250" />
+		<param name="countsScaleFactor" value="10" />
+		<param name="distanceFilter" value="null" />
+		<param name="distanceFilterCenterNode" value="null" />
+		<param name="filterModes" value="false" />
+		<param name="inputCountsFile" value="../../res/counts.xml" />
+		<param name="outputformat" value="all" />
+		<param name="writeCountsInterval" value="250" />
+	</module>
+</config>

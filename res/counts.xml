@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<counts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="http://matsim.org/files/dtd/counts_v1.xsd"
+ name="" year="0"  > 
+<!-- ====================================================================== -->
+
+	<count loc_id="21186" cs_id="Altenbekener Damm Ost (L0423)[LSA Schleife]">
+		<volume h="1" val="15.0" />
+		<volume h="2" val="9.0" />
+		<volume h="3" val="4.0" />
+		<volume h="4" val="18.0" />
+		<volume h="5" val="113.0" />
+		<volume h="6" val="254.0" />
+		<volume h="7" val="445.0" />
+		<volume h="8" val="464.0" />
+		<volume h="9" val="406.0" />
+		<volume h="12" val="391.0" />
+		<volume h="14" val="410.0" />
+		<volume h="15" val="412.0" />
+		<volume h="16" val="482.0" />
+		<volume h="17" val="490.0" />
+		<volume h="18" val="483.0" />
+		<volume h="19" val="296.0" />
+		<volume h="20" val="194.0" />
+		<volume h="21" val="133.0" />
+		<volume h="23" val="54.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="268310" cs_id="Altenbekener Damm West (L0423)[LSA Schleife]">
+		<volume h="1" val="11.0" />
+		<volume h="2" val="4.0" />
+		<volume h="3" val="8.0" />
+		<volume h="4" val="9.0" />
+		<volume h="5" val="49.0" />
+		<volume h="6" val="147.0" />
+		<volume h="7" val="359.0" />
+		<volume h="8" val="384.0" />
+		<volume h="9" val="267.0" />
+		<volume h="12" val="255.0" />
+		<volume h="14" val="302.0" />
+		<volume h="15" val="348.0" />
+		<volume h="16" val="339.0" />
+		<volume h="17" val="259.0" />
+		<volume h="18" val="251.0" />
+		<volume h="19" val="202.0" />
+		<volume h="20" val="195.0" />
+		<volume h="21" val="181.0" />
+		<volume h="23" val="46.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="24654" cs_id="B6OST[manuell]">
+		<volume h="1" val="165.0" />
+		<volume h="2" val="165.0" />
+		<volume h="3" val="33.0" />
+		<volume h="4" val="33.0" />
+		<volume h="5" val="165.0" />
+		<volume h="6" val="413.0" />
+		<volume h="7" val="924.0" />
+		<volume h="8" val="1320.0" />
+		<volume h="9" val="1073.0" />
+		<volume h="10" val="1073.0" />
+		<volume h="11" val="907.0" />
+		<volume h="12" val="825.0" />
+		<volume h="13" val="825.0" />
+		<volume h="14" val="990.0" />
+		<volume h="15" val="1072.0" />
+		<volume h="16" val="1155.0" />
+		<volume h="17" val="1320.0" />
+		<volume h="18" val="1155.0" />
+		<volume h="19" val="907.0" />
+		<volume h="20" val="660.0" />
+		<volume h="21" val="495.0" />
+		<volume h="22" val="330.0" />
+		<volume h="23" val="330.0" />
+		<volume h="24" val="165.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="360390" cs_id="B6OST_gegen[manuell]">
+		<volume h="1" val="165.0" />
+		<volume h="2" val="165.0" />
+		<volume h="3" val="33.0" />
+		<volume h="4" val="33.0" />
+		<volume h="5" val="165.0" />
+		<volume h="6" val="413.0" />
+		<volume h="7" val="924.0" />
+		<volume h="8" val="1320.0" />
+		<volume h="9" val="1073.0" />
+		<volume h="10" val="1073.0" />
+		<volume h="11" val="907.0" />
+		<volume h="12" val="825.0" />
+		<volume h="13" val="825.0" />
+		<volume h="14" val="990.0" />
+		<volume h="15" val="1072.0" />
+		<volume h="16" val="1155.0" />
+		<volume h="17" val="1320.0" />
+		<volume h="18" val="1155.0" />
+		<volume h="19" val="907.0" />
+		<volume h="20" val="660.0" />
+		<volume h="21" val="495.0" />
+		<volume h="22" val="330.0" />
+		<volume h="23" val="330.0" />
+		<volume h="24" val="165.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="291247" cs_id="B6_Nord[manuell]">
+		<volume h="1" val="230.0" />
+		<volume h="2" val="230.0" />
+		<volume h="3" val="46.0" />
+		<volume h="4" val="46.0" />
+		<volume h="5" val="230.0" />
+		<volume h="6" val="575.0" />
+		<volume h="7" val="1288.0" />
+		<volume h="8" val="1840.0" />
+		<volume h="9" val="1495.0" />
+		<volume h="10" val="1495.0" />
+		<volume h="11" val="1265.0" />
+		<volume h="12" val="1150.0" />
+		<volume h="13" val="1150.0" />
+		<volume h="14" val="1380.0" />
+		<volume h="15" val="1495.0" />
+		<volume h="16" val="1610.0" />
+		<volume h="17" val="1840.0" />
+		<volume h="18" val="1610.0" />
+		<volume h="19" val="1265.0" />
+		<volume h="20" val="920.0" />
+		<volume h="21" val="690.0" />
+		<volume h="22" val="460.0" />
+		<volume h="23" val="460.0" />
+		<volume h="24" val="230.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="144903" cs_id="B6_Nord_gegen[manuell]">
+		<volume h="1" val="230.0" />
+		<volume h="2" val="230.0" />
+		<volume h="3" val="46.0" />
+		<volume h="4" val="46.0" />
+		<volume h="5" val="230.0" />
+		<volume h="6" val="575.0" />
+		<volume h="7" val="1288.0" />
+		<volume h="8" val="1840.0" />
+		<volume h="9" val="1495.0" />
+		<volume h="10" val="1495.0" />
+		<volume h="11" val="1265.0" />
+		<volume h="12" val="1150.0" />
+		<volume h="13" val="1150.0" />
+		<volume h="14" val="1380.0" />
+		<volume h="15" val="1495.0" />
+		<volume h="16" val="1610.0" />
+		<volume h="17" val="1840.0" />
+		<volume h="18" val="1610.0" />
+		<volume h="19" val="1265.0" />
+		<volume h="20" val="920.0" />
+		<volume h="21" val="690.0" />
+		<volume h="22" val="460.0" />
+		<volume h="23" val="460.0" />
+		<volume h="24" val="230.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="341480" cs_id="B6_Ost[manuell]">
+		<volume h="1" val="217.0" />
+		<volume h="2" val="217.0" />
+		<volume h="3" val="43.0" />
+		<volume h="4" val="43.0" />
+		<volume h="5" val="217.0" />
+		<volume h="6" val="541.0" />
+		<volume h="7" val="1212.0" />
+		<volume h="8" val="1732.0" />
+		<volume h="9" val="1407.0" />
+		<volume h="10" val="1407.0" />
+		<volume h="11" val="1191.0" />
+		<volume h="12" val="1083.0" />
+		<volume h="13" val="1083.0" />
+		<volume h="14" val="1299.0" />
+		<volume h="15" val="1407.0" />
+		<volume h="16" val="1516.0" />
+		<volume h="17" val="1732.0" />
+		<volume h="18" val="1516.0" />
+		<volume h="19" val="1191.0" />
+		<volume h="20" val="866.0" />
+		<volume h="21" val="650.0" />
+		<volume h="22" val="433.0" />
+		<volume h="23" val="433.0" />
+		<volume h="24" val="217.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="341465" cs_id="B6_West[manuell]">
+		<volume h="1" val="217.0" />
+		<volume h="2" val="217.0" />
+		<volume h="3" val="43.0" />
+		<volume h="4" val="43.0" />
+		<volume h="5" val="217.0" />
+		<volume h="6" val="541.0" />
+		<volume h="7" val="1212.0" />
+		<volume h="8" val="1732.0" />
+		<volume h="9" val="1407.0" />
+		<volume h="10" val="1407.0" />
+		<volume h="11" val="1191.0" />
+		<volume h="12" val="1083.0" />
+		<volume h="13" val="1083.0" />
+		<volume h="14" val="1299.0" />
+		<volume h="15" val="1407.0" />
+		<volume h="16" val="1516.0" />
+		<volume h="17" val="1732.0" />
+		<volume h="18" val="1516.0" />
+		<volume h="19" val="1191.0" />
+		<volume h="20" val="866.0" />
+		<volume h="21" val="650.0" />
+		<volume h="22" val="433.0" />
+		<volume h="23" val="433.0" />
+		<volume h="24" val="217.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="211647" cs_id="Berliner Allee Nord (L0447)[LSA Schleife]">
+		<volume h="1" val="73.0" />
+		<volume h="2" val="64.0" />
+		<volume h="3" val="71.0" />
+		<volume h="4" val="94.0" />
+		<volume h="5" val="290.0" />
+		<volume h="6" val="645.0" />
+		<volume h="7" val="1119.0" />
+		<volume h="8" val="1154.0" />
+		<volume h="9" val="1045.0" />
+		<volume h="10" val="1045.0" />
+		<volume h="11" val="1023.0" />
+		<volume h="12" val="1101.0" />
+		<volume h="13" val="1178.0" />
+		<volume h="14" val="1142.0" />
+		<volume h="15" val="1295.0" />
+		<volume h="16" val="1328.0" />
+		<volume h="17" val="1246.0" />
+		<volume h="18" val="1161.0" />
+		<volume h="19" val="880.0" />
+		<volume h="20" val="626.0" />
+		<volume h="21" val="488.0" />
+		<volume h="22" val="468.0" />
+		<volume h="23" val="227.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="137739" cs_id="Bischofsholer Damm Süd (L0472)[LSA Schleife]">
+		<volume h="1" val="49.0" />
+		<volume h="2" val="37.0" />
+		<volume h="4" val="58.0" />
+		<volume h="5" val="172.0" />
+		<volume h="6" val="461.0" />
+		<volume h="7" val="775.0" />
+		<volume h="8" val="784.0" />
+		<volume h="9" val="701.0" />
+		<volume h="10" val="636.0" />
+		<volume h="11" val="618.0" />
+		<volume h="13" val="750.0" />
+		<volume h="14" val="748.0" />
+		<volume h="15" val="703.0" />
+		<volume h="16" val="802.0" />
+		<volume h="17" val="742.0" />
+		<volume h="18" val="682.0" />
+		<volume h="19" val="617.0" />
+		<volume h="20" val="521.0" />
+		<volume h="21" val="364.0" />
+		<volume h="22" val="328.0" />
+		<volume h="23" val="177.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="309599" cs_id="Celler Straße Südwest (L0158)[LSA Schleife]">
+		<volume h="1" val="186.0" />
+		<volume h="2" val="151.0" />
+		<volume h="3" val="92.0" />
+		<volume h="4" val="127.0" />
+		<volume h="5" val="229.0" />
+		<volume h="6" val="449.0" />
+		<volume h="7" val="711.0" />
+		<volume h="8" val="753.0" />
+		<volume h="9" val="831.0" />
+		<volume h="10" val="737.0" />
+		<volume h="11" val="713.0" />
+		<volume h="12" val="745.0" />
+		<volume h="13" val="881.0" />
+		<volume h="14" val="805.0" />
+		<volume h="15" val="967.0" />
+		<volume h="16" val="893.0" />
+		<volume h="17" val="846.0" />
+		<volume h="18" val="923.0" />
+		<volume h="19" val="915.0" />
+		<volume h="20" val="739.0" />
+		<volume h="21" val="576.0" />
+		<volume h="22" val="526.0" />
+		<volume h="23" val="418.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="124104" cs_id="Clausewitzstraße Nord (L0481)[LSA Schleife]">
+		<volume h="1" val="34.0" />
+		<volume h="2" val="20.0" />
+		<volume h="3" val="24.0" />
+		<volume h="4" val="40.0" />
+		<volume h="5" val="122.0" />
+		<volume h="7" val="540.0" />
+		<volume h="8" val="573.0" />
+		<volume h="9" val="483.0" />
+		<volume h="10" val="365.0" />
+		<volume h="11" val="403.0" />
+		<volume h="12" val="560.0" />
+		<volume h="13" val="521.0" />
+		<volume h="14" val="675.0" />
+		<volume h="15" val="757.0" />
+		<volume h="16" val="671.0" />
+		<volume h="17" val="775.0" />
+		<volume h="18" val="707.0" />
+		<volume h="19" val="499.0" />
+		<volume h="20" val="435.0" />
+		<volume h="21" val="256.0" />
+		<volume h="22" val="218.0" />
+		<volume h="23" val="145.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="91220" cs_id="Eulenkamp Nord (L0537)[LSA Schleife]">
+		<volume h="1" val="19.0" />
+		<volume h="2" val="23.0" />
+		<volume h="4" val="51.0" />
+		<volume h="5" val="185.0" />
+		<volume h="6" val="345.0" />
+		<volume h="7" val="437.0" />
+		<volume h="8" val="534.0" />
+		<volume h="9" val="400.0" />
+		<volume h="10" val="403.0" />
+		<volume h="11" val="359.0" />
+		<volume h="12" val="415.0" />
+		<volume h="13" val="464.0" />
+		<volume h="14" val="501.0" />
+		<volume h="15" val="519.0" />
+		<volume h="16" val="507.0" />
+		<volume h="18" val="421.0" />
+		<volume h="19" val="379.0" />
+		<volume h="20" val="230.0" />
+		<volume h="21" val="194.0" />
+		<volume h="22" val="153.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="111610" cs_id="Friedrichswall Ost (L0171)[LSA Schleife]">
+		<volume h="1" val="88.0" />
+		<volume h="2" val="66.0" />
+		<volume h="3" val="59.0" />
+		<volume h="4" val="95.0" />
+		<volume h="5" val="341.0" />
+		<volume h="6" val="781.0" />
+		<volume h="7" val="1459.0" />
+		<volume h="8" val="1505.0" />
+		<volume h="9" val="1419.0" />
+		<volume h="10" val="1192.0" />
+		<volume h="11" val="1523.0" />
+		<volume h="12" val="1613.0" />
+		<volume h="13" val="1594.0" />
+		<volume h="14" val="1550.0" />
+		<volume h="15" val="1676.0" />
+		<volume h="16" val="1937.0" />
+		<volume h="17" val="1963.0" />
+		<volume h="18" val="2166.0" />
+		<volume h="19" val="1505.0" />
+		<volume h="20" val="1183.0" />
+		<volume h="21" val="918.0" />
+		<volume h="22" val="713.0" />
+		<volume h="23" val="424.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="66719" cs_id="Hamburger Allee Nordwest (L0158)[LSA Schleife]">
+		<volume h="1" val="73.0" />
+		<volume h="2" val="74.0" />
+		<volume h="3" val="70.0" />
+		<volume h="4" val="92.0" />
+		<volume h="5" val="235.0" />
+		<volume h="6" val="525.0" />
+		<volume h="7" val="987.0" />
+		<volume h="8" val="1086.0" />
+		<volume h="9" val="1028.0" />
+		<volume h="10" val="929.0" />
+		<volume h="11" val="947.0" />
+		<volume h="12" val="889.0" />
+		<volume h="13" val="898.0" />
+		<volume h="14" val="971.0" />
+		<volume h="15" val="991.0" />
+		<volume h="16" val="996.0" />
+		<volume h="17" val="1023.0" />
+		<volume h="18" val="898.0" />
+		<volume h="19" val="695.0" />
+		<volume h="20" val="517.0" />
+		<volume h="21" val="456.0" />
+		<volume h="22" val="390.0" />
+		<volume h="23" val="241.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="368985" cs_id="Hamburger Allee Südost (L0158)[LSA Schleife]">
+		<volume h="1" val="129.0" />
+		<volume h="2" val="115.0" />
+		<volume h="3" val="107.0" />
+		<volume h="4" val="94.0" />
+		<volume h="5" val="320.0" />
+		<volume h="6" val="707.0" />
+		<volume h="7" val="1185.0" />
+		<volume h="8" val="1297.0" />
+		<volume h="9" val="1197.0" />
+		<volume h="10" val="1129.0" />
+		<volume h="11" val="1168.0" />
+		<volume h="12" val="1273.0" />
+		<volume h="13" val="1395.0" />
+		<volume h="14" val="1358.0" />
+		<volume h="15" val="1524.0" />
+		<volume h="16" val="1534.0" />
+		<volume h="17" val="1495.0" />
+		<volume h="18" val="1376.0" />
+		<volume h="19" val="1035.0" />
+		<volume h="20" val="903.0" />
+		<volume h="21" val="781.0" />
+		<volume h="22" val="594.0" />
+		<volume h="23" val="380.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="351842" cs_id="Hans-Boeckler-Allee Ost (L0481)[LSA Schleife]">
+		<volume h="1" val="94.0" />
+		<volume h="2" val="74.0" />
+		<volume h="3" val="67.0" />
+		<volume h="4" val="160.0" />
+		<volume h="5" val="675.0" />
+		<volume h="7" val="1892.0" />
+		<volume h="8" val="2020.0" />
+		<volume h="9" val="1879.0" />
+		<volume h="10" val="1383.0" />
+		<volume h="11" val="1309.0" />
+		<volume h="12" val="1464.0" />
+		<volume h="13" val="1410.0" />
+		<volume h="14" val="1704.0" />
+		<volume h="15" val="1709.0" />
+		<volume h="16" val="1766.0" />
+		<volume h="17" val="1890.0" />
+		<volume h="18" val="1479.0" />
+		<volume h="19" val="1002.0" />
+		<volume h="20" val="750.0" />
+		<volume h="21" val="637.0" />
+		<volume h="22" val="612.0" />
+		<volume h="23" val="318.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="351837" cs_id="Hans-Boeckler-Allee West (L0481)[LSA Schleife]">
+		<volume h="1" val="89.0" />
+		<volume h="2" val="75.0" />
+		<volume h="3" val="46.0" />
+		<volume h="4" val="86.0" />
+		<volume h="5" val="261.0" />
+		<volume h="7" val="1006.0" />
+		<volume h="8" val="1012.0" />
+		<volume h="9" val="916.0" />
+		<volume h="10" val="843.0" />
+		<volume h="11" val="918.0" />
+		<volume h="12" val="1059.0" />
+		<volume h="13" val="928.0" />
+		<volume h="14" val="1249.0" />
+		<volume h="15" val="1310.0" />
+		<volume h="16" val="1245.0" />
+		<volume h="17" val="1264.0" />
+		<volume h="18" val="989.0" />
+		<volume h="19" val="820.0" />
+		<volume h="20" val="850.0" />
+		<volume h="21" val="670.0" />
+		<volume h="22" val="528.0" />
+		<volume h="23" val="326.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="73797" cs_id="Hildesheimer Straße Nord (L0423)[LSA Schleife]">
+		<volume h="1" val="36.0" />
+		<volume h="2" val="29.0" />
+		<volume h="3" val="39.0" />
+		<volume h="4" val="26.0" />
+		<volume h="5" val="113.0" />
+		<volume h="6" val="280.0" />
+		<volume h="7" val="484.0" />
+		<volume h="8" val="512.0" />
+		<volume h="9" val="421.0" />
+		<volume h="12" val="660.0" />
+		<volume h="14" val="733.0" />
+		<volume h="15" val="795.0" />
+		<volume h="16" val="866.0" />
+		<volume h="17" val="954.0" />
+		<volume h="18" val="817.0" />
+		<volume h="19" val="630.0" />
+		<volume h="20" val="554.0" />
+		<volume h="21" val="413.0" />
+		<volume h="23" val="189.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="5166" cs_id="Hildesheimer Straße Süd (L0423)[LSA Schleife]">
+		<volume h="1" val="42.0" />
+		<volume h="2" val="25.0" />
+		<volume h="3" val="31.0" />
+		<volume h="4" val="38.0" />
+		<volume h="5" val="191.0" />
+		<volume h="6" val="475.0" />
+		<volume h="7" val="946.0" />
+		<volume h="8" val="1012.0" />
+		<volume h="9" val="765.0" />
+		<volume h="12" val="704.0" />
+		<volume h="14" val="682.0" />
+		<volume h="15" val="754.0" />
+		<volume h="16" val="818.0" />
+		<volume h="17" val="829.0" />
+		<volume h="18" val="682.0" />
+		<volume h="19" val="461.0" />
+		<volume h="20" val="353.0" />
+		<volume h="21" val="287.0" />
+		<volume h="23" val="125.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="150604" cs_id="Lavesallee Süd (L0171)[LSA Schleife]">
+		<volume h="1" val="57.0" />
+		<volume h="2" val="29.0" />
+		<volume h="3" val="37.0" />
+		<volume h="4" val="81.0" />
+		<volume h="5" val="317.0" />
+		<volume h="6" val="854.0" />
+		<volume h="7" val="1771.0" />
+		<volume h="8" val="1845.0" />
+		<volume h="9" val="1505.0" />
+		<volume h="10" val="1023.0" />
+		<volume h="11" val="1188.0" />
+		<volume h="12" val="1208.0" />
+		<volume h="13" val="1248.0" />
+		<volume h="14" val="1331.0" />
+		<volume h="15" val="1846.0" />
+		<volume h="16" val="1670.0" />
+		<volume h="17" val="1523.0" />
+		<volume h="18" val="1436.0" />
+		<volume h="19" val="1037.0" />
+		<volume h="20" val="1411.0" />
+		<volume h="21" val="956.0" />
+		<volume h="22" val="625.0" />
+		<volume h="23" val="323.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="16614" cs_id="Leibnizufer West (L0171)[LSA Schleife]">
+		<volume h="1" val="82.0" />
+		<volume h="2" val="49.0" />
+		<volume h="3" val="41.0" />
+		<volume h="4" val="79.0" />
+		<volume h="5" val="327.0" />
+		<volume h="6" val="727.0" />
+		<volume h="7" val="1145.0" />
+		<volume h="8" val="1035.0" />
+		<volume h="9" val="1176.0" />
+		<volume h="10" val="1006.0" />
+		<volume h="11" val="1243.0" />
+		<volume h="12" val="1209.0" />
+		<volume h="13" val="1246.0" />
+		<volume h="14" val="1359.0" />
+		<volume h="15" val="1382.0" />
+		<volume h="16" val="1500.0" />
+		<volume h="17" val="1518.0" />
+		<volume h="18" val="1441.0" />
+		<volume h="19" val="961.0" />
+		<volume h="20" val="688.0" />
+		<volume h="21" val="499.0" />
+		<volume h="22" val="495.0" />
+		<volume h="23" val="255.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="283543" cs_id="MS_Nord[manuell]">
+		<volume h="1" val="337.0" />
+		<volume h="2" val="337.0" />
+		<volume h="3" val="67.0" />
+		<volume h="4" val="67.0" />
+		<volume h="5" val="337.0" />
+		<volume h="6" val="841.0" />
+		<volume h="7" val="1884.0" />
+		<volume h="8" val="2692.0" />
+		<volume h="9" val="2187.0" />
+		<volume h="10" val="2187.0" />
+		<volume h="11" val="1851.0" />
+		<volume h="12" val="1683.0" />
+		<volume h="13" val="1683.0" />
+		<volume h="14" val="2019.0" />
+		<volume h="15" val="2187.0" />
+		<volume h="16" val="2356.0" />
+		<volume h="17" val="2692.0" />
+		<volume h="18" val="2356.0" />
+		<volume h="19" val="1851.0" />
+		<volume h="20" val="1346.0" />
+		<volume h="21" val="1010.0" />
+		<volume h="22" val="673.0" />
+		<volume h="23" val="673.0" />
+		<volume h="24" val="337.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="363976" cs_id="MS_Sued[manuell]">
+		<volume h="1" val="323.0" />
+		<volume h="2" val="323.0" />
+		<volume h="3" val="65.0" />
+		<volume h="4" val="65.0" />
+		<volume h="5" val="323.0" />
+		<volume h="6" val="808.0" />
+		<volume h="7" val="1809.0" />
+		<volume h="8" val="2584.0" />
+		<volume h="9" val="2100.0" />
+		<volume h="10" val="2100.0" />
+		<volume h="11" val="1777.0" />
+		<volume h="12" val="1615.0" />
+		<volume h="13" val="1615.0" />
+		<volume h="14" val="1938.0" />
+		<volume h="15" val="2100.0" />
+		<volume h="16" val="2261.0" />
+		<volume h="17" val="2584.0" />
+		<volume h="18" val="2261.0" />
+		<volume h="19" val="1777.0" />
+		<volume h="20" val="1292.0" />
+		<volume h="21" val="969.0" />
+		<volume h="22" val="646.0" />
+		<volume h="23" val="646.0" />
+		<volume h="24" val="323.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="34712" cs_id="Marienstraße Ost (L0447)[LSA Schleife]">
+		<volume h="1" val="35.0" />
+		<volume h="2" val="26.0" />
+		<volume h="3" val="36.0" />
+		<volume h="4" val="60.0" />
+		<volume h="5" val="258.0" />
+		<volume h="6" val="573.0" />
+		<volume h="7" val="835.0" />
+		<volume h="8" val="821.0" />
+		<volume h="9" val="788.0" />
+		<volume h="10" val="743.0" />
+		<volume h="11" val="718.0" />
+		<volume h="12" val="706.0" />
+		<volume h="13" val="708.0" />
+		<volume h="14" val="794.0" />
+		<volume h="15" val="810.0" />
+		<volume h="16" val="818.0" />
+		<volume h="17" val="783.0" />
+		<volume h="18" val="770.0" />
+		<volume h="19" val="645.0" />
+		<volume h="20" val="369.0" />
+		<volume h="21" val="345.0" />
+		<volume h="22" val="220.0" />
+		<volume h="23" val="124.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="283527" cs_id="Marienstraße West (L0447)[LSA Schleife]">
+		<volume h="1" val="24.0" />
+		<volume h="2" val="15.0" />
+		<volume h="3" val="11.0" />
+		<volume h="4" val="28.0" />
+		<volume h="5" val="117.0" />
+		<volume h="6" val="326.0" />
+		<volume h="7" val="486.0" />
+		<volume h="8" val="496.0" />
+		<volume h="9" val="479.0" />
+		<volume h="10" val="488.0" />
+		<volume h="11" val="500.0" />
+		<volume h="12" val="505.0" />
+		<volume h="13" val="484.0" />
+		<volume h="14" val="596.0" />
+		<volume h="15" val="583.0" />
+		<volume h="16" val="550.0" />
+		<volume h="17" val="496.0" />
+		<volume h="18" val="534.0" />
+		<volume h="19" val="385.0" />
+		<volume h="20" val="257.0" />
+		<volume h="21" val="230.0" />
+		<volume h="22" val="293.0" />
+		<volume h="23" val="114.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="353050" cs_id="Nienburger Straße Nordwest (L0164)[LSA Schleife]">
+		<volume h="1" val="24.0" />
+		<volume h="2" val="17.0" />
+		<volume h="3" val="13.0" />
+		<volume h="4" val="35.0" />
+		<volume h="5" val="81.0" />
+		<volume h="6" val="187.0" />
+		<volume h="7" val="353.0" />
+		<volume h="8" val="395.0" />
+		<volume h="9" val="331.0" />
+		<volume h="10" val="347.0" />
+		<volume h="11" val="383.0" />
+		<volume h="12" val="328.0" />
+		<volume h="13" val="403.0" />
+		<volume h="14" val="420.0" />
+		<volume h="15" val="453.0" />
+		<volume h="16" val="469.0" />
+		<volume h="17" val="492.0" />
+		<volume h="18" val="360.0" />
+		<volume h="19" val="297.0" />
+		<volume h="20" val="187.0" />
+		<volume h="21" val="190.0" />
+		<volume h="22" val="169.0" />
+		<volume h="23" val="83.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="238320" cs_id="Podbielskistraße Ost (L0537)[LSA Schleife]">
+		<volume h="1" val="44.0" />
+		<volume h="2" val="19.0" />
+		<volume h="4" val="59.0" />
+		<volume h="5" val="207.0" />
+		<volume h="6" val="517.0" />
+		<volume h="7" val="911.0" />
+		<volume h="8" val="1074.0" />
+		<volume h="9" val="724.0" />
+		<volume h="10" val="763.0" />
+		<volume h="11" val="770.0" />
+		<volume h="12" val="771.0" />
+		<volume h="13" val="788.0" />
+		<volume h="14" val="813.0" />
+		<volume h="15" val="873.0" />
+		<volume h="16" val="967.0" />
+		<volume h="18" val="788.0" />
+		<volume h="19" val="634.0" />
+		<volume h="20" val="493.0" />
+		<volume h="21" val="319.0" />
+		<volume h="22" val="250.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="138678" cs_id="Podbielskistraße West (L0537)[LSA Schleife]">
+		<volume h="1" val="21.0" />
+		<volume h="2" val="27.0" />
+		<volume h="4" val="36.0" />
+		<volume h="5" val="96.0" />
+		<volume h="6" val="251.0" />
+		<volume h="7" val="741.0" />
+		<volume h="8" val="761.0" />
+		<volume h="9" val="545.0" />
+		<volume h="10" val="493.0" />
+		<volume h="11" val="564.0" />
+		<volume h="12" val="627.0" />
+		<volume h="13" val="629.0" />
+		<volume h="14" val="641.0" />
+		<volume h="15" val="834.0" />
+		<volume h="16" val="965.0" />
+		<volume h="18" val="700.0" />
+		<volume h="19" val="535.0" />
+		<volume h="20" val="405.0" />
+		<volume h="21" val="281.0" />
+		<volume h="22" val="173.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="243418" cs_id="Sallstraße Süd (L0447)[LSA Schleife]">
+		<volume h="1" val="25.0" />
+		<volume h="2" val="25.0" />
+		<volume h="3" val="21.0" />
+		<volume h="4" val="41.0" />
+		<volume h="5" val="130.0" />
+		<volume h="6" val="296.0" />
+		<volume h="7" val="453.0" />
+		<volume h="8" val="504.0" />
+		<volume h="9" val="433.0" />
+		<volume h="10" val="415.0" />
+		<volume h="11" val="316.0" />
+		<volume h="12" val="453.0" />
+		<volume h="13" val="422.0" />
+		<volume h="14" val="234.0" />
+		<volume h="15" val="522.0" />
+		<volume h="16" val="492.0" />
+		<volume h="17" val="429.0" />
+		<volume h="18" val="504.0" />
+		<volume h="19" val="381.0" />
+		<volume h="20" val="271.0" />
+		<volume h="21" val="247.0" />
+		<volume h="22" val="256.0" />
+		<volume h="23" val="111.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="279055" cs_id="nach Bremer Damm West[Videoauswertung]">
+		<volume h="8" val="1108.0" />
+		<volume h="9" val="858.0" />
+		<volume h="10" val="957.0" />
+		<volume h="11" val="1044.0" />
+		<volume h="15" val="834.0" />
+		<volume h="16" val="1640.0" />
+		<volume h="17" val="1539.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="92354" cs_id="nach Friedrich-Ebert-Straße Süd[Videoauswertung]">
+		<volume h="8" val="1000.0" />
+		<volume h="10" val="965.0" />
+		<volume h="12" val="1104.0" />
+		<volume h="14" val="1272.0" />
+		<volume h="16" val="1186.0" />
+		<volume h="17" val="1249.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="8527" cs_id="nach Hans-Böckler-Allee Ost (Seligmannallee gesperrt)[Videoauswertung]">
+		<volume h="15" val="1052.0" />
+		<volume h="17" val="1025.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="134983" cs_id="nach Marienstraße West[Videoauswertung]">
+		<volume h="8" val="1119.0" />
+		<volume h="9" val="715.0" />
+		<volume h="10" val="654.0" />
+		<volume h="11" val="655.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="352743" cs_id="nach Nienburger Straße Nordwest[Videoauswertung]">
+		<volume h="16" val="458.0" />
+		<volume h="17" val="215.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="352742" cs_id="nach Nienburger Straße Südost[Videoauswertung]">
+		<volume h="16" val="374.0" />
+		<volume h="17" val="182.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="91115" cs_id="nach Vahrenwalder Straße Süd[Videoauswertung]">
+		<volume h="8" val="1242.0" />
+		<volume h="9" val="1081.0" />
+		<volume h="11" val="1002.0" />
+		<volume h="13" val="1099.0" />
+		<volume h="15" val="1206.0" />
+		<volume h="17" val="1176.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="90911" cs_id="von  Vahrenwalder Straße Nord[Videoauswertung]">
+		<volume h="6" val="1501.0" />
+		<volume h="7" val="1864.0" />
+		<volume h="8" val="2037.0" />
+		<volume h="9" val="1614.0" />
+		<volume h="15" val="1538.0" />
+		<volume h="16" val="1754.0" />
+		<volume h="17" val="1717.0" />
+		<volume h="18" val="1508.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="91109" cs_id="von  Vahrenwalder Straße Süd[Videoauswertung]">
+		<volume h="6" val="882.0" />
+		<volume h="7" val="1290.0" />
+		<volume h="8" val="1294.0" />
+		<volume h="9" val="1062.0" />
+		<volume h="15" val="1315.0" />
+		<volume h="16" val="1363.0" />
+		<volume h="17" val="1219.0" />
+		<volume h="18" val="1094.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="197414" cs_id="von Bremer Damm West[Videoauswertung]">
+		<volume h="1" val="63.0" />
+		<volume h="2" val="62.0" />
+		<volume h="3" val="59.0" />
+		<volume h="4" val="151.0" />
+		<volume h="5" val="660.0" />
+		<volume h="6" val="1421.0" />
+		<volume h="7" val="1704.0" />
+		<volume h="8" val="1691.0" />
+		<volume h="9" val="1587.0" />
+		<volume h="10" val="1393.0" />
+		<volume h="11" val="1367.0" />
+		<volume h="12" val="1178.0" />
+		<volume h="13" val="1274.0" />
+		<volume h="14" val="1312.0" />
+		<volume h="15" val="1395.0" />
+		<volume h="16" val="1383.0" />
+		<volume h="17" val="1461.0" />
+		<volume h="18" val="1289.0" />
+		<volume h="19" val="995.0" />
+		<volume h="20" val="790.0" />
+		<volume h="21" val="591.0" />
+		<volume h="22" val="418.0" />
+		<volume h="23" val="219.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="224934" cs_id="von Celler Straße Nordost[Videoauswertung]">
+		<volume h="6" val="226.0" />
+		<volume h="7" val="370.0" />
+		<volume h="8" val="345.0" />
+		<volume h="9" val="300.0" />
+		<volume h="15" val="361.0" />
+		<volume h="16" val="388.0" />
+		<volume h="17" val="354.0" />
+		<volume h="18" val="323.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="199925" cs_id="von Celler Straße Nordost[manuell]">
+		<volume h="1" val="35.0" />
+		<volume h="2" val="30.0" />
+		<volume h="3" val="29.0" />
+		<volume h="4" val="39.0" />
+		<volume h="5" val="137.0" />
+		<volume h="6" val="279.0" />
+		<volume h="7" val="501.0" />
+		<volume h="8" val="638.0" />
+		<volume h="9" val="519.0" />
+		<volume h="10" val="563.0" />
+		<volume h="11" val="516.0" />
+		<volume h="12" val="587.0" />
+		<volume h="13" val="584.0" />
+		<volume h="14" val="546.0" />
+		<volume h="15" val="591.0" />
+		<volume h="16" val="644.0" />
+		<volume h="17" val="611.0" />
+		<volume h="18" val="585.0" />
+		<volume h="19" val="462.0" />
+		<volume h="20" val="345.0" />
+		<volume h="21" val="278.0" />
+		<volume h="22" val="209.0" />
+		<volume h="23" val="121.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="132036" cs_id="von Celler Straße Südwest[Videoauswertung]">
+		<volume h="6" val="73.0" />
+		<volume h="7" val="90.0" />
+		<volume h="8" val="123.0" />
+		<volume h="9" val="123.0" />
+		<volume h="15" val="308.0" />
+		<volume h="16" val="388.0" />
+		<volume h="17" val="320.0" />
+		<volume h="18" val="204.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="71033" cs_id="von Friedrich-Ebert-Straße Süd[Videoauswertung]">
+		<volume h="8" val="1552.0" />
+		<volume h="9" val="556.0" />
+		<volume h="10" val="1584.0" />
+		<volume h="12" val="1618.0" />
+		<volume h="14" val="1588.0" />
+		<volume h="16" val="1640.0" />
+		<volume h="17" val="1264.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="226045" cs_id="von Hans-Böckler-Allee Ost (Seligmannallee gesperrt)[Videoauswertung]">
+		<volume h="1" val="53.0" />
+		<volume h="2" val="39.0" />
+		<volume h="4" val="102.0" />
+		<volume h="5" val="423.0" />
+		<volume h="6" val="996.0" />
+		<volume h="7" val="1489.0" />
+		<volume h="8" val="1495.0" />
+		<volume h="9" val="1292.0" />
+		<volume h="10" val="996.0" />
+		<volume h="11" val="1009.0" />
+		<volume h="13" val="1100.0" />
+		<volume h="14" val="1204.0" />
+		<volume h="15" val="1272.0" />
+		<volume h="16" val="1128.0" />
+		<volume h="17" val="1135.0" />
+		<volume h="18" val="999.0" />
+		<volume h="19" val="858.0" />
+		<volume h="20" val="629.0" />
+		<volume h="21" val="458.0" />
+		<volume h="22" val="418.0" />
+		<volume h="23" val="192.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="15395" cs_id="von Hildesheimer Straße Nordwest[Videoauswertung]">
+		<volume h="15" val="850.0" />
+		<volume h="16" val="939.0" />
+		<volume h="17" val="910.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="15392" cs_id="von Hildesheimer Straße Südost[Videoauswertung]">
+		<volume h="15" val="687.0" />
+		<volume h="16" val="636.0" />
+		<volume h="17" val="660.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="73798" cs_id="von Hildesheimer Straße Südost[Videoauswertung]">
+		<volume h="7" val="974.0" />
+		<volume h="8" val="1072.0" />
+		<volume h="11" val="330.0" />
+		<volume h="12" val="603.0" />
+		<volume h="13" val="290.0" />
+		<volume h="16" val="607.0" />
+		<volume h="17" val="590.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="94387" cs_id="von Kabelkamp West[Videoauswertung]">
+		<volume h="6" val="73.0" />
+		<volume h="7" val="90.0" />
+		<volume h="8" val="123.0" />
+		<volume h="9" val="123.0" />
+		<volume h="15" val="308.0" />
+		<volume h="16" val="388.0" />
+		<volume h="17" val="320.0" />
+		<volume h="18" val="204.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="268933" cs_id="von Klingerstraße Süd[manuell]">
+		<volume h="1" val="17.0" />
+		<volume h="2" val="17.0" />
+		<volume h="4" val="65.0" />
+		<volume h="5" val="240.0" />
+		<volume h="6" val="422.0" />
+		<volume h="7" val="473.0" />
+		<volume h="8" val="437.0" />
+		<volume h="9" val="407.0" />
+		<volume h="10" val="352.0" />
+		<volume h="11" val="412.0" />
+		<volume h="12" val="422.0" />
+		<volume h="13" val="432.0" />
+		<volume h="14" val="444.0" />
+		<volume h="15" val="483.0" />
+		<volume h="16" val="476.0" />
+		<volume h="18" val="402.0" />
+		<volume h="19" val="381.0" />
+		<volume h="20" val="306.0" />
+		<volume h="21" val="237.0" />
+		<volume h="22" val="170.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="20236" cs_id="von Lister Kirchweg West (L0530)[LSA Schleife]">
+		<volume h="1" val="10.0" />
+		<volume h="2" val="17.0" />
+		<volume h="3" val="13.0" />
+		<volume h="4" val="18.0" />
+		<volume h="5" val="72.0" />
+		<volume h="6" val="199.0" />
+		<volume h="7" val="286.0" />
+		<volume h="8" val="254.0" />
+		<volume h="9" val="240.0" />
+		<volume h="10" val="262.0" />
+		<volume h="11" val="287.0" />
+		<volume h="12" val="314.0" />
+		<volume h="13" val="250.0" />
+		<volume h="14" val="335.0" />
+		<volume h="15" val="325.0" />
+		<volume h="16" val="359.0" />
+		<volume h="17" val="338.0" />
+		<volume h="18" val="255.0" />
+		<volume h="19" val="252.0" />
+		<volume h="20" val="173.0" />
+		<volume h="21" val="139.0" />
+		<volume h="22" val="105.0" />
+		<volume h="23" val="62.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="74845" cs_id="von Marienstraße Ost[Videoauswertung]">
+		<volume h="7" val="1141.0" />
+		<volume h="8" val="894.0" />
+		<volume h="11" val="567.0" />
+		<volume h="12" val="1178.0" />
+		<volume h="13" val="580.0" />
+		<volume h="16" val="1319.0" />
+		<volume h="17" val="1342.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="134984" cs_id="von Marienstraße West[Videoauswertung]">
+		<volume h="8" val="1054.0" />
+		<volume h="9" val="714.0" />
+		<volume h="10" val="710.0" />
+		<volume h="11" val="658.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="112999" cs_id="von Niedersachsenring Ost (L0195)[LSA Schleife]">
+		<volume h="1" val="28.0" />
+		<volume h="2" val="34.0" />
+		<volume h="3" val="37.0" />
+		<volume h="4" val="75.0" />
+		<volume h="5" val="164.0" />
+		<volume h="6" val="343.0" />
+		<volume h="7" val="516.0" />
+		<volume h="8" val="511.0" />
+		<volume h="9" val="430.0" />
+		<volume h="11" val="469.0" />
+		<volume h="12" val="503.0" />
+		<volume h="13" val="505.0" />
+		<volume h="14" val="509.0" />
+		<volume h="15" val="556.0" />
+		<volume h="16" val="619.0" />
+		<volume h="17" val="585.0" />
+		<volume h="18" val="550.0" />
+		<volume h="19" val="372.0" />
+		<volume h="20" val="319.0" />
+		<volume h="21" val="274.0" />
+		<volume h="22" val="192.0" />
+		<volume h="23" val="119.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="227264" cs_id="von Sahlkamp Ost[Videoauswertung]">
+		<volume h="6" val="226.0" />
+		<volume h="7" val="370.0" />
+		<volume h="8" val="345.0" />
+		<volume h="9" val="300.0" />
+		<volume h="15" val="361.0" />
+		<volume h="16" val="388.0" />
+		<volume h="17" val="354.0" />
+		<volume h="18" val="323.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="294918" cs_id="von Sallstraße Südost[Videoauswertung]">
+		<volume h="7" val="445.0" />
+		<volume h="8" val="489.0" />
+		<volume h="11" val="195.0" />
+		<volume h="12" val="356.0" />
+		<volume h="13" val="172.0" />
+		<volume h="16" val="385.0" />
+		<volume h="17" val="357.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="29439" cs_id="von Vahrenwalder Straße Nord (L0195)[LSA Schleife]">
+		<volume h="1" val="120.0" />
+		<volume h="2" val="109.0" />
+		<volume h="3" val="86.0" />
+		<volume h="4" val="147.0" />
+		<volume h="5" val="446.0" />
+		<volume h="6" val="848.0" />
+		<volume h="7" val="1351.0" />
+		<volume h="8" val="1514.0" />
+		<volume h="9" val="1362.0" />
+		<volume h="11" val="1286.0" />
+		<volume h="12" val="1411.0" />
+		<volume h="13" val="1475.0" />
+		<volume h="14" val="1524.0" />
+		<volume h="15" val="1641.0" />
+		<volume h="16" val="1794.0" />
+		<volume h="17" val="1715.0" />
+		<volume h="18" val="1630.0" />
+		<volume h="19" val="1070.0" />
+		<volume h="20" val="892.0" />
+		<volume h="21" val="719.0" />
+		<volume h="22" val="551.0" />
+		<volume h="23" val="370.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="90909" cs_id="von Vahrenwalder Straße Süd (L0195)[LSA Schleife]">
+		<volume h="1" val="116.0" />
+		<volume h="2" val="97.0" />
+		<volume h="3" val="93.0" />
+		<volume h="4" val="162.0" />
+		<volume h="5" val="377.0" />
+		<volume h="6" val="829.0" />
+		<volume h="7" val="1227.0" />
+		<volume h="8" val="1303.0" />
+		<volume h="9" val="1045.0" />
+		<volume h="11" val="1215.0" />
+		<volume h="12" val="1162.0" />
+		<volume h="13" val="1309.0" />
+		<volume h="14" val="1300.0" />
+		<volume h="15" val="1324.0" />
+		<volume h="16" val="1448.0" />
+		<volume h="17" val="1259.0" />
+		<volume h="18" val="1324.0" />
+		<volume h="19" val="981.0" />
+		<volume h="20" val="826.0" />
+		<volume h="21" val="794.0" />
+		<volume h="22" val="554.0" />
+		<volume h="23" val="371.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="90323" cs_id="von Vahrenwalder Straße Süd[Videoauswertung]">
+		<volume h="8" val="894.0" />
+		<volume h="9" val="954.0" />
+		<volume h="11" val="1023.0" />
+		<volume h="13" val="1105.0" />
+		<volume h="15" val="1203.0" />
+		<volume h="17" val="815.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+	<count loc_id="200106" cs_id="von Wedekindstraße Ost[manuell]">
+		<volume h="1" val="26.0" />
+		<volume h="2" val="23.0" />
+		<volume h="3" val="18.0" />
+		<volume h="4" val="46.0" />
+		<volume h="5" val="122.0" />
+		<volume h="6" val="245.0" />
+		<volume h="7" val="443.0" />
+		<volume h="8" val="550.0" />
+		<volume h="9" val="479.0" />
+		<volume h="10" val="527.0" />
+		<volume h="11" val="489.0" />
+		<volume h="12" val="460.0" />
+		<volume h="13" val="525.0" />
+		<volume h="14" val="446.0" />
+		<volume h="15" val="578.0" />
+		<volume h="16" val="592.0" />
+		<volume h="17" val="565.0" />
+		<volume h="18" val="507.0" />
+		<volume h="19" val="357.0" />
+		<volume h="20" val="252.0" />
+		<volume h="21" val="220.0" />
+		<volume h="22" val="158.0" />
+		<volume h="23" val="87.0" />
+	</count>
+
+<!-- ====================================================================== -->
+
+</counts>
