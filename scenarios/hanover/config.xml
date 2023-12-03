@@ -5,15 +5,18 @@
 		<param name="eventsFileFormat" value="xml" />
 		<param name="firstIteration" value="0" />
 		<param name="lastIteration" value="250" />
-		<param name="mobsim" value="qsim" />
+		<param name="mobsim" value="hermes" />
 		<param name="writeEventsInterval" value="250" />
 		<param name="writePlansInterval" value="250" />
 		<param name="overwriteFiles" value="overwriteExistingFiles" />
+		<param name="runId" value="hh-25pct" />
 		<param name="routingAlgorithmType" value="FastAStarLandmarks" />
+<!--		TESTEN-->
+<!--		<param name="routingAlgorithmType" value="SpeedyALT"/>-->
 	</module>
 	<module name="global" >
 		<param name="coordinateSystem" value="EPSG:25832" />
-		<param name="numberOfThreads" value="8" />
+		<param name="numberOfThreads" value="16" />
 	</module>
 	
 	<module name="plans" >
@@ -23,18 +26,52 @@
 		<param name="inputNetworkFile" value="../../res/network.xml" />
 	</module>
 
-	<module name="qsim" >
-		<param name="startTime" value="00:00:00" />
+	<module name="hermes" >
+		<!-- Simulation End Time -->
 		<param name="endTime" value="36:00:00" />
-		<param name="flowCapacityFactor" value="0.1"/>
-		<param name="storageCapacityFactor" value="0.15"/>
-		<param name="mainMode" value="car,bus,tram" />
-		<param name="trafficDynamics" value="kinematicWaves" />
-		<param name="stuckTime" value="30.0" />
-		<param name="insertingWaitingVehiclesBeforeDrivingVehicles" value="true" />
-		<param name="numberOfThreads" value="8" />
+		<param name="flowCapacityFactor" value="0.25" />
+		<param name="mainMode" value="car" />
+		<param name="storageCapacityFactor" value="0.3" />
+		<!-- time in seconds.  Time after which the frontmost vehicle on a link is called `stuck' if it does not move. Set to Integer.MAX_VALUE to disable this behavior -->
+		<param name="stuckTime" value="30" />
+		<!-- treats PT as deterministic. PT vehicles will run with a steady speed. Should be used with separate network layers for PT and other network modes. -->
+		<param name="useDeterministicPt" value="false" />
 	</module>
-	
+
+<!--	<module name="qsim" >-->
+<!--		<param name="startTime" value="00:00:00" />-->
+<!--		<param name="endTime" value="36:00:00" />-->
+<!--		<param name="flowCapacityFactor" value="0.1"/>-->
+<!--		<param name="storageCapacityFactor" value="0.15"/>-->
+<!--		<param name="mainMode" value="car,bus,tram" />-->
+<!--		<param name="trafficDynamics" value="kinematicWaves" />-->
+<!--		<param name="stuckTime" value="30.0" />-->
+<!--		<param name="insertingWaitingVehiclesBeforeDrivingVehicles" value="true" />-->
+<!--		<param name="numberOfThreads" value="16" />-->
+<!--	</module>-->
+	<module name="simwrapper">
+		<!--  Whether default dashboards are loaded via SPI.  -->
+		<param name="defaultDashboards" value="enabled"/>
+		<!--  Set of simple class names or fully qualified class names of dashboards to exclude  -->
+		<param name="exclude" value=""/>
+		<!--  Set of packages to scan for dashboard provider classes.  -->
+		<param name="packages" value=""/>
+		<parameterset type="params">
+			<!--  Tuple of two coordinate separated with ',' that may be used to define the center of map views.  -->
+			<param name="mapCenter" value="13.39,52.51"/>
+			<!--  Default zoom level used for map view.  -->
+			<param name="mapZoomLevel" value="9.1"/>
+			<!--  Sample size of the run, which may be required by certain analysis functions.  -->
+			<param name="sampleSize" value="0.25"/>
+			<!--  Shp file that may be used by analysis functions that support shp file input.  -->
+			<param name="shp" value="./area/area.shp"/>
+		</parameterset>
+		<parameterset type="params">
+			<!--  Name of the context, empty string means default context.  -->
+			<param name="context" value="freight"/>
+			<param name="sampleSize" value="0.25"/>
+		</parameterset>
+	</module>
 	<module name="planCalcScore" >
 		<param name="fractionOfIterationsToStartScoreMSA" value="0.8" />
 		<parameterset type="activityParams" >
@@ -85,59 +122,62 @@
 			<param name="openingTime" value="0:00:00" />	
 			<param name="closingTime" value="24:00:00" />			
 		</parameterset>	
-		<!-- ====================================================================== -->	
-		<parameterset type="modeParams" >
-				<param name="constant" value="-5.75" />
-				<param name="marginalUtilityOfTraveling_util_hr" value="-7.25" />
-				<param name="mode" value="car" />
-				<param name="monetaryDistanceRate" value="-0.00030" />
+		<!-- ====================================================================== -->
+		<parameterset type="modeParams">
+			<!--  [utils] alternative-specific constant.  Normally per trip, but that is probably buggy for multi-leg trips.  -->
+			<param name="constant" value="-0.30077680258110934"/>
+			<!--  [unit_of_money/day] Fixed cost of mode, per day.  -->
+			<param name="dailyMonetaryConstant" value="-14.1"/>
+			<!--  [utils] daily utility constant. default=0 to be backwards compatible  -->
+			<param name="dailyUtilityConstant" value="10.98"/>
+			<!--  [utils/m] utility of traveling (e.g. walking or driving) per m, normally negative.  this is on top of the time (dis)utility.  -->
+			<param name="marginalUtilityOfDistance_util_m" value="1.4E-4"/>
+			<!--  [utils/hr] additional marginal utility of traveling.  normally negative.  this comes on top of the opportunity cost of time  -->
+			<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
+			<param name="mode" value="car"/>
+			<!--  [unit_of_money/m] conversion of distance into money. Normally negative.  -->
+			<param name="monetaryDistanceRate" value="-2.6E-4"/>
 		</parameterset>
-		<parameterset type="modeParams" >
-				<param name="constant" value="-11.75" />
-				<param name="marginalUtilityOfTraveling_util_hr" value="-9.75" />
-				<param name="mode" value="ride" />
-				<param name="monetaryDistanceRate" value="-0.00030" />
+		<parameterset type="modeParams">
+			<param name="constant" value="-1.1996407419918727"/>
+			<param name="dailyMonetaryConstant" value="-0.0"/>
+			<param name="marginalUtilityOfDistance_util_m" value="3.5E-4"/>
+			<param name="marginalUtilityOfTraveling_util_hr" value="-10.32"/>
+			<param name="mode" value="ride"/>
+			<param name="monetaryDistanceRate" value="-3.9E-4"/>
 		</parameterset>
-		<parameterset type="modeParams" >
-				<param name="constant" value="-7.0" />
-				<param name="marginalUtilityOfTraveling_util_hr" value="-6.75" />
-				<param name="mode" value="pt" />
-				<param name="monetaryDistanceRate" value="-0.00025" />
+		<parameterset type="modeParams">
+			<param name="constant" value="-0.38627376236312827"/>
+			<param name="dailyMonetaryConstant" value="-3.0"/>
+			<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
+			<param name="mode" value="pt"/>
 		</parameterset>
-		<parameterset type="modeParams" >
-				<param name="constant" value="-7.25" />
-				<param name="marginalUtilityOfTraveling_util_hr" value="-5.0" />
-				<param name="mode" value="bike" />
+		<parameterset type="modeParams">
+			<param name="constant" value="-2.1384635949005277"/>
+			<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
+			<param name="mode" value="bike"/>
 		</parameterset>
-		<parameterset type="modeParams" >
-				<param name="constant" value="0.0" />
-				<param name="marginalUtilityOfTraveling_util_hr" value="0" />
-				<param name="mode" value="walk" />
+		<parameterset type="modeParams">
+			<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
+			<param name="mode" value="walk"/>
 		</parameterset>
-		<parameterset type="modeParams" >
-				<param name="constant" value="0.0" />
-				<param name="marginalUtilityOfTraveling_util_hr" value="0" />
-				<param name="mode" value="walk_around" />
-		</parameterset>
+	</parameterset>
 	</module>
-	
-	<module name="planscalcroute" >
-		<param name="networkModes" value="car,ride" />
-		<parameterset type="teleportedModeParameters" >
-			<param name="mode" value="bike" />
-			<param name="beelineDistanceFactor" value="1.3" />
-			<param name="teleportedModeSpeed" value="3.88888" />
-		</parameterset>
-		<parameterset type="teleportedModeParameters" >
-			<param name="mode" value="walk" />
-			<param name="beelineDistanceFactor" value="1.1" />
-			<param name="teleportedModeSpeed" value="1.1111111" />
-		</parameterset>
-		<parameterset type="teleportedModeParameters" >
-			<param name="mode" value="walk_around" />
-			<param name="beelineDistanceFactor" value="1.1" />
-			<param name="teleportedModeSpeed" value="1.1111111" />
-		</parameterset>
+
+	<module name="planscalcroute">
+	<!--  Defines how access and egress to main mode is simulated. Either of [none, accessEgressModeToLink, walkConstantTimeToLink, accessEgressModeToLinkPlusTimeConstant], Current default=none which means no access or egress trips are simulated.  -->
+	<param name="accessEgressType" value="accessEgressModeToLink"/>
+	<!--  All the modes for which the router is supposed to generate network routes (like car)  -->
+	<param name="networkModes" value="car,freight,ride"/>
+	<parameterset type="teleportedModeParameters">
+		<param name="mode" value="bike"/>
+		<!--  Speed for a teleported mode. Travel time = (<beeline distance> * beelineDistanceFactor) / teleportedModeSpeed. Insert a line like this for every such mode.  -->
+		<param name="teleportedModeSpeed" value="3.1388889"/>
+	</parameterset>
+	<parameterset type="teleportedModeParameters">
+		<param name="mode" value="walk"/>
+		<param name="teleportedModeSpeed" value="1.0555556"/>
+	</parameterset>
 	</module>
 	
 	<module name="strategy" >
@@ -148,20 +188,39 @@
 			<param name="weight" value="0.70" />
 		</parameterset>
 		<parameterset type="strategysettings" >
-			<param name="strategyName" value="ReRoute" />
-			<param name="weight" value="0.1" />
-		</parameterset>
-		<parameterset type="strategysettings" >
-			<param name="strategyName" value="SubtourModeChoice" />
-			<param name="weight" value="0.1" />
-		</parameterset>
-		 <parameterset type="strategysettings" > 
 			<param name="strategyName" value="TimeAllocationMutator_ReRoute" />
 			<param name="weight" value="0.1" />
 			<param name="disableAfterIteration" value="70"/>
 		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="TimeAllocationMutator"/>
+			<param name="subpopulation" value="person"/>
+			<param name="weight" value="0.15"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="SubtourModeChoice"/>
+			<param name="subpopulation" value="person"/>
+			<param name="weight" value="0.15"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="ReRoute"/>
+			<param name="subpopulation" value="person"/>
+			<param name="weight" value="0.15"/>
+		</parameterset>
 	</module>
-	
+	<module name="subtourModeChoice">
+	<!--  Only for backwards compatibility.  Defines if only trips from modes list should change mode, or all trips.  Options: fromAllModesToSpecifiedModes fromSpecifiedModesToSpecifiedModes betweenAllAndFewerConstraints   -->
+	<param name="behavior" value="betweenAllAndFewerConstraints"/>
+	<!--  Defines whether car availability must be considered or not. A agent has no car only if it has no license, or never access to a car  -->
+<!--	TESTEN-->
+	<param name="considerCarAvailability" value="true"/>
+	<!--  If greater than 0, subtours will also consider coordinates to be at the same location when smaller than set distance.  -->
+	<param name="coordDistance" value="100.0"/>
+	<!--  Defines all the modes available, including chain-based modes, seperated by commas  -->
+	<param name="modes" value="car,pt,bike,walk,ride"/>
+	<!--  Defines the probability of changing a single trip for a unchained mode instead of subtour.  -->
+	<param name="probaForRandomSingleTripMode" value="0.5"/>
+	</module>
 	<module name="travelTimeCalculator">
 		<param name="analyzedModes" value="car,freight" />
 		<param name="separateModes" value="true" />
@@ -177,6 +236,7 @@
 	</module>
 	<module name="parallelEventHandling" >
 		<param name="numberOfThreads" value="1" />
+		<param name="oneThreadPerHandler" value="true" />
 	</module>
 	
 	<module name="transit">
@@ -210,5 +270,26 @@
 		<param name="inputCountsFile" value="../../res/counts.xml" />
 		<param name="outputformat" value="all" />
 		<param name="writeCountsInterval" value="250" />
+	</module>
+<!--	TESTEN-->
+	<module name="ReplanningAnnealer">
+		<parameterset type="AnnealingVariable">
+			<!--  options: linear, exponential, geometric, msa, sigmoid and disabled (no annealing).  -->
+			<param name="annealType" value="sigmoid"/>
+			<!--  subpopulation to have the global innovation rate adjusted. Not applicable when annealing with other parameters.  -->
+			<param name="defaultSubpopulation" value="person"/>
+			<!--  final annealing value. When the annealing function reaches this value, further results remain constant.  -->
+			<param name="endValue" value="0.01"/>
+			<!--  this parameter enters the exponential and sigmoid formulas. May be an iteration or a share, i.e. 0.5 for halfLife at 50% of iterations. Exponential: startValue / exp(it/halfLife)  -->
+			<param name="halfLife" value="0.5"/>
+			<!--  sigmoid: 1/(1+e^(shapeFactor*(it - halfLife))); geometric: startValue * shapeFactor^it; msa: startValue / it^shapeFactor  -->
+			<param name="shapeFactor" value="0.01"/>
+			<!--  start value for annealing.  -->
+			<param name="startValue" value="0.6"/>
+		</parameterset>
+	</module>
+	<module name="TimeAllocationMutator">
+		<!--  Default:1800.0; Defines how many seconds a time mutation can maximally shift a time.  -->
+		<param name="mutationRange" value="900.0"/>
 	</module>
 </config>

@@ -71,4 +71,13 @@ public class RunMatsimApplication extends MATSimApplication {
 
 		// ---
 	}
+	controler.addOverridingModule(new AbstractModule() {
+		@Override
+		public void install() {
+
+			addTravelTimeBinding(TransportMode.ride).to(networkTravelTime());
+			addTravelDisutilityFactoryBinding(TransportMode.ride).to(carTravelDisutilityFactoryKey());
+
+		}
+	});
 }
