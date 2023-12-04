@@ -298,40 +298,39 @@ public class RunMatsim {
 
         //Erg�nzen der Aktivit�ten mit Dauerabh�ngigen Zus�tzen
         for (long ii = 0; ii <= 97200; ii += 600) {
+
+            long typicalDuration = ii > 0 ? ii : ii + 60; //for zero-time activities set typical dur to 1 minute
+
             ActivityParams ap = new ActivityParams("home_" + ii);
-            ap.setTypicalDuration(ii);
+            ap.setTypicalDuration(typicalDuration);
             config.planCalcScore().addActivityParams(ap);
 
-//            ap = new ActivityParams("home_" + ii + "_" + ii);
-//            ap.setTypicalDuration(ii);
-//            config.planCalcScore().addActivityParams(ap);
-
             ap = new ActivityParams("work_" + ii);
-            ap.setTypicalDuration(ii);
+            ap.setTypicalDuration(typicalDuration);
             ap.setOpeningTime(6. * 3600);
             ap.setClosingTime(22. * 3600);
             config.planCalcScore().addActivityParams(ap);
 
             ap = new ActivityParams("education_" + ii);
-            ap.setTypicalDuration(ii);
+            ap.setTypicalDuration(typicalDuration);
             ap.setOpeningTime(7. * 3600);
             ap.setClosingTime(20. * 3600);
             config.planCalcScore().addActivityParams(ap);
 
             ap = new ActivityParams("leisure_" + ii);
-            ap.setTypicalDuration(ii);
+            ap.setTypicalDuration(typicalDuration);
             ap.setOpeningTime(6. * 3600);
             ap.setClosingTime(22. * 3600);
             config.planCalcScore().addActivityParams(ap);
 
             ap = new ActivityParams("shopping_" + ii);
-            ap.setTypicalDuration(ii);
+            ap.setTypicalDuration(typicalDuration);
             ap.setOpeningTime(8. * 3600);
             ap.setClosingTime(22. * 3600);
             config.planCalcScore().addActivityParams(ap);
 
             ap = new ActivityParams("other_" + ii);
-            ap.setTypicalDuration(ii);
+            ap.setTypicalDuration(typicalDuration);
             config.planCalcScore().addActivityParams(ap);
         }
         adaptPTVehicleSize(controler.getScenario().getTransitVehicles(), scalefactor);
