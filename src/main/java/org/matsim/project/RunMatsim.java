@@ -200,33 +200,33 @@ public class RunMatsim {
 
         //Erg�nzen der Aktivit�ten mit Dauerabh�ngigen Zus�tzen
         for (long ii = 600; ii <= 97200; ii += 600) {
-            ActivityParams ap = new ActivityParams("home_" + ii + ".0");
+            ActivityParams ap = new ActivityParams("home_" + ii);
             ap.setTypicalDuration(ii);
             config.planCalcScore().addActivityParams(ap);
 
-            ap = new ActivityParams("home_" + ii + "_" + ii + ".0");
+            ap = new ActivityParams("home_" + ii + "_" + ii);
             ap.setTypicalDuration(ii);
             config.planCalcScore().addActivityParams(ap);
 
-            ap = new ActivityParams("work_" + ii + ".0");
+            ap = new ActivityParams("work_" + ii);
             ap.setTypicalDuration(ii);
             ap.setOpeningTime(6. * 3600);
             ap.setClosingTime(22. * 3600);
             config.planCalcScore().addActivityParams(ap);
 
-            ap = new ActivityParams("education_" + ii + ".0");
+            ap = new ActivityParams("education_" + ii);
             ap.setTypicalDuration(ii);
             ap.setOpeningTime(7. * 3600);
             ap.setClosingTime(20. * 3600);
             config.planCalcScore().addActivityParams(ap);
 
-            ap = new ActivityParams("leisure_" + ii + ".0");
+            ap = new ActivityParams("leisure_" + ii);
             ap.setTypicalDuration(ii);
             ap.setOpeningTime(6. * 3600);
             ap.setClosingTime(22. * 3600);
             config.planCalcScore().addActivityParams(ap);
 
-            ap = new ActivityParams("shopping_" + ii + ".0");
+            ap = new ActivityParams("shopping_" + ii);
             ap.setTypicalDuration(ii);
             ap.setOpeningTime(8. * 3600);
             ap.setClosingTime(22. * 3600);
