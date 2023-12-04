@@ -4,15 +4,14 @@
 	<module name="controler" >
 		<param name="eventsFileFormat" value="xml" />
 		<param name="firstIteration" value="0" />
-		<param name="lastIteration" value="250" />
+		<param name="lastIteration" value="10" />
 		<param name="mobsim" value="hermes" />
 		<param name="writeEventsInterval" value="250" />
 		<param name="writePlansInterval" value="250" />
-		<param name="overwriteFiles" value="overwriteExistingFiles" />
+		<param name="overwriteFiles" value="deleteDirectoryIfExists" />
 		<param name="runId" value="hh-25pct" />
-		<param name="routingAlgorithmType" value="FastAStarLandmarks" />
-<!--		TESTEN-->
-<!--		<param name="routingAlgorithmType" value="SpeedyALT"/>-->
+<!--		<param name="routingAlgorithmType" value="FastAStarLandmarks" />-->
+		<param name="routingAlgorithmType" value="SpeedyALT"/>
 	</module>
 	<module name="global" >
 		<param name="coordinateSystem" value="EPSG:25832" />
@@ -49,29 +48,29 @@
 <!--		<param name="insertingWaitingVehiclesBeforeDrivingVehicles" value="true" />-->
 <!--		<param name="numberOfThreads" value="16" />-->
 <!--	</module>-->
-	<module name="simwrapper">
-		<!--  Whether default dashboards are loaded via SPI.  -->
-		<param name="defaultDashboards" value="enabled"/>
-		<!--  Set of simple class names or fully qualified class names of dashboards to exclude  -->
-		<param name="exclude" value=""/>
-		<!--  Set of packages to scan for dashboard provider classes.  -->
-		<param name="packages" value=""/>
-		<parameterset type="params">
-			<!--  Tuple of two coordinate separated with ',' that may be used to define the center of map views.  -->
-			<param name="mapCenter" value="13.39,52.51"/>
-			<!--  Default zoom level used for map view.  -->
-			<param name="mapZoomLevel" value="9.1"/>
-			<!--  Sample size of the run, which may be required by certain analysis functions.  -->
-			<param name="sampleSize" value="0.25"/>
-			<!--  Shp file that may be used by analysis functions that support shp file input.  -->
-			<param name="shp" value="./area/area.shp"/>
-		</parameterset>
-		<parameterset type="params">
-			<!--  Name of the context, empty string means default context.  -->
-			<param name="context" value="freight"/>
-			<param name="sampleSize" value="0.25"/>
-		</parameterset>
-	</module>
+<!--	<module name="simwrapper">-->
+<!--		&lt;!&ndash;  Whether default dashboards are loaded via SPI.  &ndash;&gt;-->
+<!--		<param name="defaultDashboards" value="enabled"/>-->
+<!--		&lt;!&ndash;  Set of simple class names or fully qualified class names of dashboards to exclude  &ndash;&gt;-->
+<!--		<param name="exclude" value=""/>-->
+<!--		&lt;!&ndash;  Set of packages to scan for dashboard provider classes.  &ndash;&gt;-->
+<!--		<param name="packages" value=""/>-->
+<!--		<parameterset type="params">-->
+<!--			&lt;!&ndash;  Tuple of two coordinate separated with ',' that may be used to define the center of map views.  &ndash;&gt;-->
+<!--			<param name="mapCenter" value="13.39,52.51"/>-->
+<!--			&lt;!&ndash;  Default zoom level used for map view.  &ndash;&gt;-->
+<!--			<param name="mapZoomLevel" value="9.1"/>-->
+<!--			&lt;!&ndash;  Sample size of the run, which may be required by certain analysis functions.  &ndash;&gt;-->
+<!--			<param name="sampleSize" value="0.25"/>-->
+<!--			&lt;!&ndash;  Shp file that may be used by analysis functions that support shp file input.  &ndash;&gt;-->
+<!--			<param name="shp" value="./area/area.shp"/>-->
+<!--		</parameterset>-->
+<!--		<parameterset type="params">-->
+<!--			&lt;!&ndash;  Name of the context, empty string means default context.  &ndash;&gt;-->
+<!--			<param name="context" value="freight"/>-->
+<!--			<param name="sampleSize" value="0.25"/>-->
+<!--		</parameterset>-->
+<!--	</module>-->
 	<module name="planCalcScore" >
 		<param name="fractionOfIterationsToStartScoreMSA" value="0.8" />
 		<parameterset type="activityParams" >
@@ -161,15 +160,16 @@
 			<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
 			<param name="mode" value="walk"/>
 		</parameterset>
-	</parameterset>
 	</module>
 
 	<module name="planscalcroute">
 	<!--  Defines how access and egress to main mode is simulated. Either of [none, accessEgressModeToLink, walkConstantTimeToLink, accessEgressModeToLinkPlusTimeConstant], Current default=none which means no access or egress trips are simulated.  -->
 	<param name="accessEgressType" value="accessEgressModeToLink"/>
 	<!--  All the modes for which the router is supposed to generate network routes (like car)  -->
-	<param name="networkModes" value="car,freight,ride"/>
-	<parameterset type="teleportedModeParameters">
+	<param name="networkModes" value="car,ride"/>
+<!--<param name="networkModes" value="car,freight,ride"/>-->
+
+		<parameterset type="teleportedModeParameters">
 		<param name="mode" value="bike"/>
 		<!--  Speed for a teleported mode. Travel time = (<beeline distance> * beelineDistanceFactor) / teleportedModeSpeed. Insert a line like this for every such mode.  -->
 		<param name="teleportedModeSpeed" value="3.1388889"/>
