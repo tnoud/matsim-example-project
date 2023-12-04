@@ -329,6 +329,10 @@ public class RunMatsim {
             ap.setOpeningTime(8. * 3600);
             ap.setClosingTime(22. * 3600);
             config.planCalcScore().addActivityParams(ap);
+
+            ap = new ActivityParams("other_" + ii);
+            ap.setTypicalDuration(ii);
+            config.planCalcScore().addActivityParams(ap);
         }
         adaptPTVehicleSize(controler.getScenario().getTransitVehicles(), scalefactor);
 
