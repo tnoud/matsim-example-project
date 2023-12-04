@@ -112,14 +112,14 @@
 		<parameterset type="activityParams" >
 			<param name="activityType" value="passenger_interaction_0.0" />
 			<param name="typicalDuration" value="00:02:00" />	
-			<param name="openingTime" value="0:00:00" />	
-			<param name="closingTime" value="24:00:00" />		
+<!--			<param name="openingTime" value="0:00:00" />	-->
+<!--			<param name="closingTime" value="24:00:00" />		-->
 		</parameterset>	
 		<parameterset type="activityParams" >
 			<param name="activityType" value="walk_interaction_0.0" />
-			<param name="typicalDuration" value="00:00:01" />	
-			<param name="openingTime" value="0:00:00" />	
-			<param name="closingTime" value="24:00:00" />			
+			<param name="typicalDuration" value="00:00:01" />
+			<param name="openingTime" value="0:00:00" />
+			<param name="closingTime" value="40:00:00" />
 		</parameterset>	
 		<!-- ====================================================================== -->
 		<parameterset type="modeParams">
