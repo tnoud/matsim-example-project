@@ -297,7 +297,7 @@ public class RunMatsim {
         });
 
         //Erg�nzen der Aktivit�ten mit Dauerabh�ngigen Zus�tzen
-        for (long ii = 600; ii <= 97200; ii += 600) {
+        for (long ii = 0; ii <= 97200; ii += 600) {
             ActivityParams ap = new ActivityParams("home_" + ii);
             ap.setTypicalDuration(ii);
             config.planCalcScore().addActivityParams(ap);
