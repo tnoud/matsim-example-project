@@ -127,7 +127,7 @@ public class RunMatsim {
         if (cadyts.equals("yesCadyts")) {
             runWithCadyts(configPath, outputPath, scalefactor);
         } else {
-            runWithoutCadyts(configPath, outputPath, scalefactor);
+            runWithoutCadyts(configPath, outputPath, scalefactor, iterations, freetext);
         }
     }
 
@@ -237,9 +237,13 @@ public class RunMatsim {
         controler.run();
     }
 
-    private static void runWithoutCadyts(String configPath, String outputPath, int scalefactor) {
+    private static void runWithoutCadyts(String configPath, String outputPath, int scalefactor, int iterations,
+                                         String freetext) {
         final Config config = ConfigUtils.loadConfig(configPath, new SwissRailRaptorConfigGroup());
+
         config.controler().setOutputDirectory(outputPath);
+        config.controler().setLastIteration(iterations);
+        config.controler().setRunId(freetext);
 
         config.qsim().setNumberOfThreads(8);
         config.global().setNumberOfThreads(8);
