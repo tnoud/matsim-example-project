@@ -142,9 +142,10 @@ public class RunMatsim {
 
         config.subtourModeChoice().setProbaForRandomSingleTripMode(0.5);
 
-        config.plansCalcRoute().removeModeRoutingParams(TransportMode.ride); // TODO: ?
-        config.plansCalcRoute().removeModeRoutingParams(TransportMode.pt);
-        config.plansCalcRoute().removeModeRoutingParams("undefined");
+        //TEST
+//        config.plansCalcRoute().removeModeRoutingParams(TransportMode.ride); // TODO: ?
+//        config.plansCalcRoute().removeModeRoutingParams(TransportMode.pt);
+//        config.plansCalcRoute().removeModeRoutingParams("undefined");
 
         config.plansCalcRoute().setAccessEgressType(AccessEgressType.walkConstantTimeToLink);
         config.qsim().setUsingTravelTimeCheckInTeleportation(true);
@@ -250,10 +251,10 @@ public class RunMatsim {
         config.parallelEventHandling().setNumberOfThreads(1);
 
         config.subtourModeChoice().setProbaForRandomSingleTripMode(0.5);
-
-        config.plansCalcRoute().removeModeRoutingParams(TransportMode.ride); //TODO:?
-        config.plansCalcRoute().removeModeRoutingParams(TransportMode.pt);
-        config.plansCalcRoute().removeModeRoutingParams("undefined");
+        //TEST
+//        config.plansCalcRoute().removeModeRoutingParams(TransportMode.ride); //TODO:?
+//        config.plansCalcRoute().removeModeRoutingParams(TransportMode.pt);
+//        config.plansCalcRoute().removeModeRoutingParams("undefined");
 
         config.plansCalcRoute().setAccessEgressType(AccessEgressType.accessEgressModeToLink);
         config.qsim().setUsingTravelTimeCheckInTeleportation(true);
