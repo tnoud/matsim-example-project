@@ -97,11 +97,11 @@ import ch.sbb.matsim.routing.pt.raptor.RaptorUtils;
 public class RunTTMatrix {
 
     // Define file paths and other parameters as constants
-    private static final String ZONES_SHAPE_FILENAME = "path/to/zonesShapeFile";
-    private static final String NETWORK_FILENAME = "D:\\_MA uncloud Backup\\01_MATSimModelCreator\\res\\network\\network.xml";
-    private static final String EVENTS_FILENAME = "path/to/eventsFile";
-    private static final String SCHEDULE_FILENAME = "path/to/scheduleFile";
-    private static final String OUTPUT_DIRECTORY = "path/to/outputDirectory";
+    private static final String ZONES_SHAPE_FILENAME = "/home/felix/IdeaProjects/matsim-example-project/res/RH_useful__zone.SHP";
+    private static final String NETWORK_FILENAME = "/home/felix/IdeaProjects/matsim-example-project/output/240103_2140_test_iter10_scale10_noCadyts/test.output_network.xml.gz";
+    private static final String EVENTS_FILENAME = "/home/felix/IdeaProjects/matsim-example-project/output/240103_2140_test_iter10_scale10_noCadyts/test.output_events.xml.gz";
+    private static final String SCHEDULE_FILENAME = "/home/felix/IdeaProjects/matsim-example-project/res/transitSchedule.xml";
+    private static final String OUTPUT_DIRECTORY = "/home/felix/IdeaProjects/matsim-example-project/output/ttmatrix/";
     private static final String ZONES_ID_ATTRIBUTE_NAME = "NAME";
     private static final int NUMBER_OF_POINTS_PER_ZONE = 5;
     private static final String MODE = "car";
@@ -120,7 +120,7 @@ public class RunTTMatrix {
         Config config = new Config();
         config.addCoreModules();
 
-        CalculateSkimMatrices skims = new CalculateSkimMatrices(OUTPUT_DIRECTORY, 8);
+        CalculateSkimMatrices skims = new CalculateSkimMatrices(OUTPUT_DIRECTORY, 32);
 
         skims.calculateSamplingPointsPerZoneFromNetwork(NETWORK_FILENAME, NUMBER_OF_POINTS_PER_ZONE, ZONES_SHAPE_FILENAME, ZONES_ID_ATTRIBUTE_NAME, r);
 

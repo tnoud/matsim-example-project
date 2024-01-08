@@ -108,8 +108,8 @@ public class RunMatsim {
 
         String configPath = "scenarios/hanover/config.xml";
         String freetext = "test"; //short string to identify run character
-        int iterations = 10;
-        int scalefactor = 10;    //percent of population
+        int iterations = 250;
+        int scalefactor = 25;    //percent of population
         String datetime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyMMdd_HHmm"));
         String cadyts = "noCadyts";
 

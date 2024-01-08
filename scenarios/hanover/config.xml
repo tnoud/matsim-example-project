@@ -263,7 +263,7 @@
 	
 	<module name="counts" >
 		<param name="analyzedModes" value="car" />
-		<param name="averageCountsOverIterations" value="250" />
+		<param name="averageCountsOverIterations" value="10" />
 		<param name="countsScaleFactor" value="10" />
 		<param name="distanceFilter" value="null" />
 		<param name="distanceFilterCenterNode" value="null" />

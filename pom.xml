@@ -11,7 +11,7 @@
 
 	<properties>
 		<!-- Options: stable build based on pull requests (e.g. 15.0-PR2344), weekly (e.g. 15.0-2023w01) or official (e.g. 14.0) releases -->
-		<!--		<matsim.version>16.0-PR2509</matsim.version>-->
+<!--		<matsim.version>16.0-PR2509</matsim.version>-->
 		<matsim.version>15.0</matsim.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -142,8 +142,15 @@
 <!--		<dependency>-->
 <!--			<groupId>org.matsim.contrib</groupId>-->
 <!--			<artifactId>simwrapper</artifactId>-->
-<!--			<version>16.0-2023w40</version>-->
+<!--			<version>${matsim.version}</version>-->
 <!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/org.matsim.contrib/sbb-extensions -->
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>sbb-extensions</artifactId>
+			<version>${matsim.version}</version>
+			<!-- (replace this with the version of MATSim you are using, such as the current snapshot) -->
+		</dependency>
 
 		<!--Dependencies from where stated above to here are added as a service; they can be removed if you don't need them-->
 
